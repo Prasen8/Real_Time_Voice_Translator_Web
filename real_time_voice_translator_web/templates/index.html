@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Voice Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Voice Translator 🎙️🔊</h1>
+        
+        <div class="section">
+            <label for="input-lang">Select Input Language:</label>
+            <select id="input-lang">
+                <!-- Options populated by JavaScript -->
+            </select>
+        </div>
+        
+        <div class="section">
+            <label for="output-lang">Select Output Language:</label>
+            <select id="output-lang">
+                <!-- Options populated by JavaScript -->
+            </select>
+        </div>
+        
+        <div class="buttons">
+            <button id="start-btn">Start Translation</button>
+            <button id="stop-btn">Stop Translation</button>
+            <button id="about-btn">About this Project</button>
+        </div>
+        
+        <div class="text-sections">
+            <div>
+                <h2>Recognized Text ⮯</h2>
+                <textarea id="input-text" readonly></textarea>
+            </div>
+            <div>
+                <h2>Translated Text ⮯</h2>
+                <textarea id="output-text" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Modal -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About</h2>
+            <p>
+                A machine learning project that translates voice from one language to another language in real time while preserving the tone and emotion of the speaker, and outputs the result in MP3 format. Choose input and output languages from the dropdown menu and start the translation!<br><br>
+                By Prasen Nimje!
+            </p>
+            <a href="https://github.com/Prasen8" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/prasen-nimje-022373259/" target="_blank">Linkdin</a>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

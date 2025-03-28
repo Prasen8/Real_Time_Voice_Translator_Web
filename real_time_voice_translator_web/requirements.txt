@@ -1,0 +1,22 @@
+Flask
+gTTS
+speechrecognition
+pygame
+deep_translator
+googletrans==4.0.0-rc1  # Ensure compatibility
+uuid
+os
+
+
+
+real_time_voice_translator_web/
+├── app.py
+├── requirements.txt
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── scripts.js
+├── templates/
+│   └── index.html
+└── voice.mp3  # This will be generated dynamically
